@@ -5,7 +5,7 @@ import jaconv
 
 #****************************
 # ＜設定＞
-ENV_TGT_PATH = './test見積書' #対象パス
+ENV_TGT_PATH = '../../test見積書' #対象パス
 # ENV_TGT_PATH = 'D:/test/test1'
 ENV_LOG_FILE = './result.log' #ログファイル
 ENV_ERR_LOG_FILE = './error.log' #ログファイル
@@ -178,7 +178,7 @@ after_word = "_"
 
 for i in before_word:
     #ファイルを取得する
-    files_2 = glob.glob('./test見積書/*'+ i +'*')
+    files_2 = glob.glob(ENV_TGT_PATH+'/*'+ i +'*')
     #print(files_2)
 
     #before_wordの単語をafter_wordに変更
